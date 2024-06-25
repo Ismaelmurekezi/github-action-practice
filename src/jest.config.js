@@ -1,11 +1,14 @@
 module.exports = {
-    transform: {
-      "^.+\\.(js|jsx)$": "babel-jest",
-    },
-    moduleFileExtensions: ["js", "jsx"],
-    testEnvironment: "jsdom",
-    collectCoverage: true,
-    coverageDirectory: 'coverage',
-    collectCoverageFrom: ['src/**/*.{js,jsx}', '!src/**/*.test.{js,jsx}']
-  };
-  
+  setupFilesAfterEnv: ["<rootDir>/src/setupTests.js"],
+  testEnvironment: "jsdom",
+  collectCoverage: true,
+  collectCoverageFrom: ["src/**/*.{js,jsx}"],
+  coverageDirectory: "coverage",
+  coverageReporters: ["json", "lcov", "text", "clover"],
+  moduleNameMapper: {
+    "\\.(css|less)$": "identity-obj-proxy",
+  },
+  transform: {
+    "^.+\\.jsx?$": "babel-jest",
+  },
+};

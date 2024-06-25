@@ -2,11 +2,12 @@
 
 # github-action-practice
 
+[![codecov](https://codecov.io/gh/Ismaelmurekezi/github-action-practice/branch/main/graph/badge.svg)](https://codecov.io/gh/Ismaelmurekezi/github-action-practice)
+
 [![Coverage Status](https://img.shields.io/badge/coverage-80%25-brightgreen)](URL_TO_COVERAGE_REPORT)
 ![example workflow](https://github.com/github/docs/actions/workflows/test.yml/badge.svg)
 
 ![coverage](./coverage/badge.svg)
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
